@@ -40,7 +40,24 @@ pub fn run(){
     println!("Stack Address of s7 is :{:p}",&s7);
     println!("Stack Address of change_string is :{:p}",&change_string);
     // println!("Heap Address of change_string is :{:p}",change_string.as_ptr());
-    
+    let mut s10 = String::from("hello");
+    // let r2 = &s10;
+    // let r1 = &mut s10;
+
+    let mut s12 = String::from("Hello");
+    let r1 = &s12;
+    let r2 = &s12;
+    println!("{},{}",r1,r2);
+    let mut r3 = &mut s12;
+    // r3 = String::from("Hello Japan");
+
+    *r3 = String::from("Hello Japam");
+    println!("{}",r3);
+    // println!("{}",s10);
+    // println!("{}",r1);
+    println!("{}",s12);
+    s12 = String::from("Hello World");
+    println!("{}",s12);
 }
 
 // fn take_ownership(s: String){
