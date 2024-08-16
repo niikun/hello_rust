@@ -2,7 +2,9 @@
 // mod stack_heap;
 // mod ownership;
 // mod life_time;
-mod dangling_pointer;
+// mod dangling_pointer;
+// mod generics;
+mod ex_struct;
 
 fn main() {
     // println!("Hello, world!");
@@ -10,6 +12,8 @@ fn main() {
     // stack_heap::run();
     // ownership::run();
     // life_time::run();
-    dangling_pointer::run();
+    // dangling_pointer::run();
+    // generics::run();
+    ex_struct::run();
 
 }
