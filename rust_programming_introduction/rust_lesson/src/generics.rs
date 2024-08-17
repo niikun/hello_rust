@@ -25,6 +25,11 @@ fn largest<T:PartialOrd + Copy>(list: Vec<T>) -> T{
     largest
 }
 
+fn dummy1<'a>() -> &'a str{
+    let s = String::from("demo");
+    &s
+}
+
 // fn large_char(list: Vec<char>)->char{
 //     let mut largest = list[0];
 //     for i in list{
