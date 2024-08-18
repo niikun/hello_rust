@@ -7,7 +7,9 @@
 // mod ex_struct;
 // mod lifetime;
 // mod structs;
-mod enums;
+// mod enums;
+mod traits;
+
 
 fn main() {
     // println!("Hello, world!");
@@ -20,5 +22,6 @@ fn main() {
     // ex_struct::run();
     // lifetime::run();
     // structs::run();
-    enums::run();
+    // enums::run();
+    traits::run();
 }
